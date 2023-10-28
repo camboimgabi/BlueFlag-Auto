@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Blue Flag Auto</title>
+</head>
+<body>
+    <header>
+        <div id="title">
+            <h1>Blue Flag Auto</h1>
+        </div>
+
+        <ul>
+            <a href="#"><li>Home</li></a>
+            <a href="#"><li>Calendário</li></a>
+            <a href="#"><li>Notícias</li></a>
+            <a href="#"><li>Equipes</li></a>
+            <a href="#"><li>Jaquetas</li></a>
+            <a href="#" id=""><li>Já tem uma conta?</li></a>
+        </ul>
+    </header>
+
+    <main>
+        <aside>
+            <h2><span>Are you ready</span></h2>
+            <h2>for the future?</h2>
+            <p>
+                A temporada 2023 começou! Viva a F1 de um jeito único.</p>
+            <form>
+                <input type="text" placeholder="Nome">
+                <input type="email" placeholder="E-mail">
+                <input type="submit" value="Inscreva-se">
+            </form>
+        </aside>
+
+        <article>
+            <img src="mercedes-w14-1.jpg" alt="carro de corrida">
+        </article>
+    </main>
+    
+</body>
+
+<style>
+    body{
+    background-color: rgb(168, 166, 166);
+    color: white;
+    font-family: poppinsregular;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 15px;
+}
+
+header{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    border: 8px solid rgb(138, 34, 34);
+    background-color: rgb(175, 22, 22);
+}
+
+#title{
+    flex-direction: column;
+    line-height: 10px;
+}
+
+li{
+    display: inline-block;
+    margin: 20px;
+}
+
+a{
+    color: white;
+}
+
+a:hover{
+    color: rgb(132, 14, 201);
+    transition: 0.3s all;
+}
+
+#inscreva-se-btn{
+    border: 2px solid rgb(132, 14, 201);
+    padding: 10px;
+    border-radius: 15px;
+}
+
+#inscreva-se-btn:hover{
+    background-color: rgb(132, 14, 201);
+    color: white;
+}
+
+h1{
+    font-weight: 200;
+}
+
+main{
+    display: flex;
+    flex-direction: row;
+    margin-top: 50px;
+}
+
+h2{
+    font-size: 56px;
+    line-height: 10px;
+    
+}
+
+span{
+    color: rgb(138, 34, 34);
+}
+
+p{
+    line-height: 20px;
+    max-width: 500px;
+    font-family: poppinslight;
+}
+
+img{
+    width: 600px;
+    border-radius: 60%;
+    position: center;
+
+}
+
+form{
+    display: flex;
+    flex-direction: column;
+    width: 70%;
+}
+
+form [type="submit"]{
+    height: 50px;
+    width: 50%;
+    background-color: rgb(175, 22, 22);
+    color: white;
+    font-weight: bold;
+}
+form [type="submit"]:hover{
+    cursor: pointer;
+}
+
+input{
+    margin-top: 20px;
+    height: 20px;
+    padding: 15px;
+    border-radius: 20px;
+    border: none;
+    font-size: 15px;
+
+}
+</style>
+</html>
