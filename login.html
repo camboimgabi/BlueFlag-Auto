@@ -1,0 +1,40 @@
+
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <title> Blue Flag Auto/Login</title>
+   
+
+   <script>
+
+        function validarFormulario() {
+    var nome = document.forms["meu_form"]["nome"].value;
+    var email = document.forms["meu_form"]["email"].value;
+    var idade = document.forms["meu_form"]["idade"].value;
+    var genero = document.querySelector('input[name="genero"]:checked');
+
+    if (nome === "") {
+        alert("É necessário preencher o campo Nome Completo.");
+        return false;
+    }
+    if (email === "") {
+        alert("É necessário preencher o campo E-mail.");
+        return false;
+    }
+    if (idade === "") {
+        alert("É necessário preencher o campo Idade.");
+        return false;
+    }
+    if (!genero) {
+        alert("É necessário selecionar um gênero.");
+        return false;
+    }
+    return true;
+
+
+}
+
+</script>
